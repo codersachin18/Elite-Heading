@@ -1,0 +1,57 @@
+.elite-heading-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.elite-heading-title {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.preset-1 .elite-heading-title {
+    background-image: linear-gradient(90deg, #ff7a18 0%, #ff5c7a 50%, #ff4d8a 100%);
+}
+
+.preset-2 .elite-heading-title {
+    background-image: linear-gradient(90deg, #00bfa6 0%, #00a0ff 50%, #0066ff 100%);
+}
+
+.preset-3 .elite-heading-title {
+    background-image: linear-gradient(90deg, #7b2ff7 0%, #e94057 100%);
+}
+
+.preset-4 .elite-heading-title {
+    background-image: linear-gradient(90deg, #a8ff78 0%, #78ffd6 100%);
+}
+
+.preset-5 .elite-heading-title {
+    background-image: linear-gradient(90deg, #ff4b1f 0%, #ffb199 100%);
+}
+
+.elite-heading-title {
+    word-break: break-word;
+}
+
+.elite-heading-typing-cursor {
+    display: inline-block;
+    width: 3px; /* thicker cursor */
+    height: 1.2em;
+    background: black; /* gradient color */
+    animation: blink 1s steps(2, start) infinite;
+    vertical-align: bottom;
+	margin-left:4px;
+}
+
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .elite-heading-title { line-height: 1.15; }
+}
